@@ -1,1 +1,1 @@
-# Kiberbiztons-g-fiataloknak
+# Kiberbiztonság-fiataloknak
