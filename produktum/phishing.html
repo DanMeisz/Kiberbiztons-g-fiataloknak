@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adathalászat & Átverések - Kiberbiztonság Fiataloknak</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+</head>
+<body class="bg-light d-flex flex-column min-vh-100">
+
+  <!-- Navigációs sáv -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="index.html">
+        <i class="bi bi-shield-lock-fill me-2"></i>NetBiztos
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Menü megnyitása">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold">
+          <li class="nav-item"><a class="nav-link" href="index.html">Főoldal</a></li>
+          <li class="nav-item"><a class="nav-link" href="passwords.html">Jelszavak & 2FA</a></li>
+          <li class="nav-item"><a class="nav-link active" href="phishing.html">Adathalászat</a></li>
+          <li class="nav-item"><a class="nav-link" href="privacy.html">Digitális Lábnyom</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Fejléc -->
+  <header class="bg-dark text-white py-4 mb-4">
+    <div class="container text-center">
+      <h1 class="fw-bold text-danger">Adathalászat & Online Csalások</h1>
+      <p class="text-secondary mb-0">Hogyan ne dőlj be a csaló üzeneteknek és a kamu weboldalaknak?</p>
+    </div>
+  </header>
+
+  <!-- Fő tartalom -->
+  <main class="container my-4 flex-grow-1">
+    <div class="row align-items-center mb-5 flex-lg-row-reverse">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <h2 class="fw-bold text-dark mb-3">Mi az az adathalászat (Phishing)?</h2>
+        <p class="text-secondary">
+          Az adathalászat olyan csalási technika, amelyben a támadó hivatalos szervnek, ismerősnek vagy ismert cégnek (pl. Steam, Netflix, Instagram, futárszolgálat) adja ki magát, hogy megszerezze a belépési adataidat vagy a bankkártyaszámodat.
+        </p>
+        <div class="alert alert-warning border-0 shadow-sm" role="alert">
+          <h5 class="alert-heading fw-bold"><i class="bi bi-exclamation-triangle-fill me-2"></i>A 3 legfontosabb intő jel:</h5>
+          <ul class="mb-0 mt-2">
+            <li><strong>Sürgetés:</strong> "24 órán belül zároljuk a fiókod, kattints ide most!"</li>
+            <li><strong>Túl szép, hogy igaz legyen:</strong> "Nyertél egy ingyenes iPhone-t / 10 000 ingyen V-Bucksot!"</li>
+            <li><strong>Furcsa webcímek:</strong> pl. <code>discord-gift-nitro.xyz</code> a hivatalos <code>discord.com</code> helyett.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=700" class="img-fluid rounded-4 shadow" alt="Adathalászat veszélyek">
+      </div>
+    </div>
+
+    <!-- Tipikus csalási formák -->
+    <h3 class="fw-bold text-center mb-4">Gyakori Csalások a Fiatalok Körében</h3>
+    <div class="row g-4 mb-5">
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0 p-3">
+          <div class="card-body">
+            <h5 class="card-title fw-bold text-primary"><i class="bi bi-controller me-2"></i>Játékbeli Átverések</h5>
+            <p class="card-text text-secondary">Kamu linkek ingyenes skinekért, rangokért vagy játékvalutáért. Ha beírod a Steam/Epic Games jelszavad, azonnal ellopják a profilodat.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0 p-3">
+          <div class="card-body">
+            <h5 class="card-title fw-bold text-primary"><i class="bi bi-chat-dots-fill me-2"></i>"Feltört ismerős" üzenetek</h5>
+            <p class="card-text text-secondary">Amikor egy osztálytársad profiljáról kapsz üzenetet: <em>"Te vagy ezen a videón?"</em> vagy <em>"Szavazz rám ebben a versenyben!"</em>. Soha ne kattints rá!</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0 p-3">
+          <div class="card-body">
+            <h5 class="card-title fw-bold text-primary"><i class="bi bi-box-seam-fill me-2"></i>Kamu Csomagküldő SMS</h5>
+            <p class="card-text text-secondary">"A csomagod várakozik, fizesd be a vámot a linken!" szövegű SMS-ek, amelyek kártevő szoftvert telepítenek vagy bankkártyaadatokat kérnek.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Lábléc -->
+  <footer class="bg-dark text-white text-center py-4 mt-auto">
+    <div class="container">
+      <p class="mb-1">&copy; 2026 Kiberbiztonság Fiataloknak — NetBiztos Projekt.</p>
+      <small class="text-secondary">Vigyázz a személyes adataidra online!</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
