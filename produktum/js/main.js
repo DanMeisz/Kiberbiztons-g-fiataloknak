@@ -56,6 +56,22 @@ passwordInput.addEventListener("input", function () {
         strengthText.textContent = "Nagyon erős";
     }
 
+    // Folyamatjelző színének frissítése
+    strengthBar.classList.remove(
+        "bg-danger",
+        "bg-warning",
+        "bg-success"
+    );
+
+    if (score <= 40) {
+        strengthBar.classList.add("bg-danger");
+    } else if (score <= 60) {
+        strengthBar.classList.add("bg-warning");
+    } else {
+        strengthBar.classList.add("bg-success");
+    }
+
+    
     // Követelmények vizuális visszajelzése
     updateCheck(lengthCheck, hasLength);
     updateCheck(lowerCheck, hasLowercase);
@@ -63,3 +79,4 @@ passwordInput.addEventListener("input", function () {
     updateCheck(numberCheck, hasNumber);
     updateCheck(specialCheck, hasSpecial);
 });
+
