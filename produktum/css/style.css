@@ -1,0 +1,31 @@
+/*Főoldal témakártyái*/
+.topic-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.topic-card:hover {
+    transform: translateY(-4px);
+}
+
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Adathalász felismerő carousel */
+#phishingCarousel .card {
+    min-height: 400px;
+}
+
+#phishingCarousel .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+#phishingCarousel .phishing-actions {
+    margin-top: auto !important;
+}
+
+#phishingCarousel .phishing-feedback {
+    min-height: 90px;
+}
