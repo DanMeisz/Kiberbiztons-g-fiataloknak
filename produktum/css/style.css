@@ -6,3 +6,8 @@
 .topic-card:hover {
     transform: translateY(-4px);
 }
+
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
