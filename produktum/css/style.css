@@ -11,3 +11,21 @@
     height: 220px;
     object-fit: cover;
 }
+
+/* Adathalász felismerő carousel */
+#phishingCarousel .card {
+    min-height: 400px;
+}
+
+#phishingCarousel .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+#phishingCarousel .phishing-actions {
+    margin-top: auto !important;
+}
+
+#phishingCarousel .phishing-feedback {
+    min-height: 90px;
+}
