@@ -105,17 +105,18 @@ if (phishingButtons.length > 0) {
 
             // Kiolvassuk a slide helyes válaszát
             const correctAnswer = currentSlide.dataset.correct;
+            const explanation = currentSlide.dataset.explanation
 
             // Megkeressük az adott slide visszajelző mezőjét
             const feedback = currentSlide.querySelector(".phishing-feedback");
 
             // A kiválasztott és a helyes válasz összehasonlítása
             if (selectedAnswer === correctAnswer) {
-                feedback.textContent = "Helyes válasz!";
+                feedback.textContent = "Helyes! " + explanation;
                 feedback.className =
                     "phishing-feedback alert alert-success mt-3";
             } else {
-                feedback.textContent = "Nem egészen. Próbáld meg újra!";
+                feedback.textContent = "Nem egészen. " + explanation;
                 feedback.className =
                     "phishing-feedback alert alert-danger mt-3";
             }
